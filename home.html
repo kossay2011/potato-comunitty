@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥔 Potato Community - Gaming & Friends</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .games-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .game-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .game-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .game-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .features-section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .games-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🥔</div>
+            <h1>Potato Community</h1>
+            <p class="subtitle">Where Gaming Meets Friendship</p>
+        </header>
+
+        <section class="hero-section">
+            <h2>Join the Ultimate Gaming Community!</h2>
+            <p>Connect with fellow gamers, make new friends, and dominate the leaderboards together!</p>
+            <a href="https://discord.gg/7njq9kyR4r
+            " class="cta-button">Join Our Discord</a>
+        </section>
+
+        <section class="games-section">
+            <div class="game-card">
+                <img src="https://via.placeholder.com/80x80/ff6b6b/ffffff?text=MC" alt="Minecraft" class="game-icon">
+                <h3 class="game-title">Minecraft</h3>
+                <p>Build, explore, and survive together in our epic Minecraft worlds!</p>
+            </div>
+            
+            <div class="game-card">
+                <img src="https://via.placeholder.com/80x80/4ecdc4/ffffff?text=CS2" alt="Counter-Strike 2" class="game-icon">
+                <h3 class="game-title">Counter-Strike 2</h3>
+                <p>Strategic gameplay and intense firefights with our competitive team!</p>
+            </div>
+            
+            <div class="game-card">
+                <img src="https://via.placeholder.com/80x80/45b7d1/ffffff?text=VAL" alt="Valorant" class="game-icon">
+                <h3 class="game-title">Valorant</h3>
+                <p>Master your abilities and coordinate with teammates for victory!</p>
+            </div>
+            
+            <div class="game-card">
+                <img src="https://via.placeholder.com/80x80/96ceb4/ffffff?text=CM" alt="Combat Master" class="game-icon">
+                <h3 class="game-title">Combat Master</h3>
+                <p>Fast-paced mobile action with our skilled combat squad!</p>
+            </div>
+            
+            <div class="game-card">
+                <img src="https://via.placeholder.com/80x80/ffeaa7/ffffff?text=RBX" alt="Roblox" class="game-icon">
+                <h3 class="game-title">Roblox</h3>
+                <p>Endless adventures and creative experiences await!</p>
+            </div>
+        </section>
+        
+
+        <section class="features-section">
+            <h2>Why Join Potato Community?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Daily Gaming Sessions</h3>
+                    <p>Regular events and tournaments for all skill levels</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Friendly Community</h3>
+                    <p>Make lasting friendships with gamers worldwide</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Competitive Spirit</h3>
+                    <p>Join our ranked teams and climb the leaderboards</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🎉</div>
+                    <h3>Fun Events</h3>
+                    <p>Special events, giveaways, and community celebrations</p>
+                </div>
+            </div>
+        </section>
+        <style>
+            body {
+                /* fallback for browsers that don't support gradients */
+                background: #232526;
+                /* animated gradient background */
+                background: linear-gradient(-45deg, #232526, #414345, #45b7d1, #ffeaa7, #96ceb4);
+                background-size: 400% 400%;
+                animation: gradientBG 18s ease infinite;
+            }
+            @keyframes gradientBG {
+                0% {background-position: 0% 50%;}
+                50% {background-position: 100% 50%;}
+                100% {background-position: 0% 50%;}
+            }
+            /* Optional: subtle floating shapes */
+            .floating-shape {
+                position: fixed;
+                z-index: 0;
+                opacity: 0.18;
+                pointer-events: none;
+                border-radius: 50%;
+                filter: blur(2px);
+                animation: floatShape 12s ease-in-out infinite alternate;
+            }
+            .floating-shape.shape1 {
+                width: 180px; height: 180px;
+                left: 5vw; top: 10vh;
+                background: #45b7d1;
+                animation-delay: 0s;
+            }
+            .floating-shape.shape2 {
+                width: 120px; height: 120px;
+                right: 8vw; top: 30vh;
+                background: #ffeaa7;
+                animation-delay: 3s;
+            }
+            .floating-shape.shape3 {
+                width: 90px; height: 90px;
+                left: 20vw; bottom: 12vh;
+                background: #96ceb4;
+                animation-delay: 6s;
+            }
+            @keyframes floatShape {
+                0% { transform: translateY(0) scale(1);}
+                100% { transform: translateY(-40px) scale(1.08);}
+            }
+        </style>
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+
+        <footer>
+            <p>&copy; 2024 Potato Community. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">📱</a>
+                <a href="#">🐦</a>
+                <a href="#">📺</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+<script>
+// Add some cool interactive effects
+document.addEventListener('DOMContentLoaded', function() {
+    // Parallax effect for header
+    window.addEventListener('scroll', function() {
+        const scrolled = window.pageYOffset;
+        const header = document.querySelector('header');
+        header.style.transform = `translateY(${scrolled * 0.5}px)`;
+    });
+
+    // Animate game cards on hover
+    const gameCards = document.querySelectorAll('.game-card');
+    gameCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.05) rotate(2deg)';
+            this.style.boxShadow = '0 20px 40px rgba(0,0,0,0.3)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1) rotate(0deg)';
+            this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
+        });
+    });
+
+    // Add particle effect background
+    createParticles();
+});
+
+function createParticles() {
+    const particleContainer = document.createElement('div');
+    particleContainer.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    `;
+    document.body.appendChild(particleContainer);
+
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.style.cssText = `
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 50%;
+            animation: float ${3 + Math.random() * 4}s linear infinite;
+            left: ${Math.random() * 100}%;
+            animation-delay: ${Math.random() * 3}s;
+        `;
+        particleContainer.appendChild(particle);
+    }
+}
+
+// Add CSS animations
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes float {
+        0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+    }
+
+    .game-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .feature-item {
+        transition: all 0.3s ease;
+    }
+
+    .feature-item:hover {
+        transform: translateY(-10px);
+        background: rgba(255,255,255,0.15);
+    }
+
+    .cta-button {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+
+    .cta-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s;
+    }
+
+    .cta-button:hover::before {
+        left: 100%;
+    }
+
+    header {
+        transition: transform 0.1s ease;
+    }
+
+    .logo {
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+        40% { transform: translateY(-10px); }
+        60% { transform: translateY(-5px); }
+    }
+`;
+document.head.appendChild(style);
+</script>
+<script>
+// Replace placeholder images with emojis
+document.addEventListener('DOMContentLoaded', function() {
+    const gameCards = document.querySelectorAll('.game-card');
+    const gameEmojis = ['⛏️', '🔫', '🎯', '⚔️', '🎮'];
+    
+    gameCards.forEach((card, index) => {
+        const img = card.querySelector('.game-icon');
+        if (img && gameEmojis[index]) {
+            img.style.display = 'none';
+            const emoji = document.createElement('div');
+            emoji.textContent = gameEmojis[index];
+            emoji.style.cssText = `
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin: 0 auto 15px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 40px;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+            `;
+            img.parentNode.insertBefore(emoji, img);
+        }
+    });
+});
+</script>
+<style>
+    body {
+        background: linear-gradient(135deg, #1a0000 0%, #330000 100%);
+    }
+
+    .cta-button {
+        background: linear-gradient(45deg, #cc0000, #990000);
+    }
+
+    .game-card {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid #cc0000;
+    }
+
+    .features-section {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid #cc0000;
+    }
+
+    .hero-section {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid #cc0000;
+    }
+
+    header {
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid #cc0000;
+    }
+
+    footer {
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid #cc0000;
+    }
+
+    .game-title {
+        color: #ff3333;
+    }
+
+    .feature-icon {
+        color: #ff3333;
+    }
+</style>
